@@ -8,13 +8,13 @@
 
     During the analysis to refactor, following steps were involved.
 
-    1. The way source data in '2017' and '2018' worksheets are arranged for all stickers.
+    1. The way source data in '2017' and '2018' worksheets are arranged for all tickers.
         - The tickers that are used for look up in this code have been arranged in ascending order (A to Z). This fact may result in reducing one of the external loop of the nested loop of original code.
     
     https://github.com/asitkumar26/stock-analysis/blob/main/Resources/Ticker-Values.png
      
     2. The way script is written in original code
-        - Because of the nested loop, the inner loop that contains three calculations ('total violume', 'ticker starting price' and 'ticker ending price') will be executed 'no of tickers' * no of rows of the corresponding year worksheet' times which could be time consuming. 
+        - Because of the nested loop, the inner loop that contains three calculations ('total volume', 'ticker starting price' and 'ticker ending price') will be executed 'no of tickers' * no of rows of the corresponding year worksheet' times which could be time consuming. 
 
     https://github.com/asitkumar26/stock-analysis/blob/main/Resources/Loop-original%20code.png
     
